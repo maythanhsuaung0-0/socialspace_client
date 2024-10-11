@@ -1,15 +1,15 @@
 "use client";
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
 import http from "./http.js";
 import CreatePostCard from "../../components/CreatePostCard";
 import PostCard from "../../components/PostCard";
 import { useUserContext } from "@/contexts/usercontext";
 import Sidebar from "../../components/Sidebar";
-type User = {
-    id: number;
-    name: string;
-    email: string;
-}
+// type User = {
+//     id: number;
+//     name: string;
+//     email: string;
+// }
 type Posts = {
     id: number;
     post: string;
