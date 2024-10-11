@@ -31,9 +31,9 @@ export default function Home() {
     
       {user? (
         <>
-          <div className="grid pt-20 bg-[#18191A] min-h-screen gap-12">
+          <div className="grid pt-[4.5rem] lg:pt-20 bg-[#18191A] min-h-screen gap-12">
           <Sidebar/>
-            <div className="pt-1 w-[40%] m-auto" >
+            <div className=" w-full lg:w-[40%] m-auto" >
               <div><CreatePostCard user={user} /></div>
               <div>
               {

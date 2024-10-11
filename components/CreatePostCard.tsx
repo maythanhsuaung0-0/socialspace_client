@@ -43,7 +43,7 @@ const CreatePostCard = ( props:UserProps) => {
       let postToCreate:PostProps = {
         post: values.post,
         UserId: user.id,
-        created_at: date,
+        created_at: date
       };
       console.log("postToCreate",postToCreate);
       http.post("/posts/create", postToCreate).then((res) => {
@@ -54,7 +54,7 @@ const CreatePostCard = ( props:UserProps) => {
     },
   });
   return (
-    <div className="p-4 rounded-md w-full shadow-sm bg-[#242526]">
+    <div className="p-4 rounded-none lg:rounded-md w-full shadow-sm bg-[#242526]">
       <div className="grid grid-cols-[3rem_auto] gap-2">
         <div className="rounded-full grid self-center justify-center w-12 h-12 bg-red-400 text-white">
           <span className="self-center">{user.name[0]}</span>
@@ -68,7 +68,7 @@ const CreatePostCard = ( props:UserProps) => {
       </div>
       {isOpen && (
         <div className="absolute z-[60] bg-[#1a1b1c8e] grid justify-center backdrop-blur-sm top-0 left-0 w-full h-full text-white">
-          <div className="bg-[#242526] text-white w-[500px] rounded-md h-fit self-center border border-[#414244]">
+          <div className="bg-[#242526] text-white w-[400px] lg:w-[500px] rounded-md h-fit self-center border border-[#414244]">
             <div className="flex flex-row w-full p-5  border-b border-[#414244]">
               <div className="text-center flex-[3]  text-lg">Create Post</div>
               <div className="ml-auto">

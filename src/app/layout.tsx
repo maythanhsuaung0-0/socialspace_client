@@ -31,7 +31,7 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen bg-[#18191A] overflow-auto relative`}
         >
-          {<Navbar />}
+          <Navbar />
           {children}
         </body>
       </UserProvider>

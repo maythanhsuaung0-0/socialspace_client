@@ -34,7 +34,7 @@ const LoginPage = () => {
         localStorage.setItem("accessToken", response.data.accessToken);
         console.log("response", response.data.user);
         setUser(response.data.user);
-        // router.push("/");
+        router.push("/");
       })
       .catch((err) => {
         if(err.response){
